@@ -10,15 +10,16 @@
 
 body {
   color: white;
-  width: 100%;
-  min-height: 100vh;
+  width: 100dvw;
   overflow-x: hidden;
+  height: 100%;
   background: #000;
   border-color: #3b3b3b;
+  user-select: none;
 }
 
 canvas {
-  touch-action: auto; /* Allow touch scrolling over canvas elements */
+  touch-action: none;
 }
 
 .screen-max-width {
