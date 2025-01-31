@@ -19,7 +19,7 @@ body {
 }
 
 canvas {
-  touch-action: auto;
+  touch-action: none;
 }
 
 .screen-max-width {
