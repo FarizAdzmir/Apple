@@ -1,15 +1,7 @@
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
+import gsap from "gsap"
+
+import { ScrollTrigger } from "gsap/all"
 gsap.registerPlugin(ScrollTrigger);
-
-// Fix scrolling issues on mobile
-ScrollTrigger.config({ ignoreMobileResize: true });
-
-// Disable GSAP ScrollTrigger on mobile
-if (window.innerWidth < 768) {
-  ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-}
-
 
 export const animateWithGsap = (target, animationProps, scrollProps) => {
   gsap.to(target, {
